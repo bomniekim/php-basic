@@ -1,0 +1,59 @@
+<?php
+
+    // 로그인을 하면 session에 정보를 저장하고 각 페이지에서 모두 사용하고자 함
+    // 로그인 여부에 따라 화면 구성이 다르기 때문에 session에 저장되어 있는 회원정보 중 id, name, level 값 읽어오기
+    session_start(); // 세션을 저장하든 읽어오든 사용하고자 하면 반드시 이 메소드로 시작
+
+    $userid="";
+    $username="";
+    $userlevel=""; // 회원등급: 1~9등급 [1등급:관리자, 9등급:신규회원]
+    $userpoint="";
+
+    if( isset($_SESSION['userid']) ) $userid= $_SESSION['userid'];
+    if( isset($_SESSION['username']) ) $userid= $_SESSION['username'];
+    if( isset($_SESSION['userlevel']) ) $userid= $_SESSION['userlevel'];
+    if( isset($_SESSION['userpoint']) ) $userid= $_SESSION['userpoint'];
+
+
+?> 
+
+
+<!-- header 영역의 로고와 회원가입/로그인 표시 영역 -->
+        <div id="top"> <!-- 화면 스타일링을 위해 div요소 사용 -->
+            <!-- 1. 로고영역 -->
+            <h2><a href="../index.php">PHP 프로그래밍 입문</a></h2> <!-- include된 상태에서는 삽입된 문서의 위치 기준 -->
+
+            <!-- 2. 회원가입/로그인 버튼 표시 영역 -->
+            <ul id="top_menu">
+                <!-- 로그인이 안된 상태 -->
+                <?php if(!$userid){  ?>
+                    <!-- html문법 영역 -->
+                    <li><a href="../member/member_form.php">회원가입</a></li>
+                    <li> | </li>
+                    <li><a href="../login/login_form.php">로그인</a></li>
+
+                <?php } else {?> 
+                    <!-- 로그인이 된 상태 -->
+                    <li><a href="../login/logout.php">로그아웃</a></li>
+                    <li> | </li>
+                    <li><a href="../login/member_modify_form.php">정보수정</a></li>
+                <?php }  ?>
+
+                <!-- 관리자모드 로그인시 추가로..-->
+                <?php if($userlevel==1){ ?>
+                    <li> | </li>
+                    <li><a href="../admin/admin.php">관리자모드</a></li>
+                <?php } ?>
+            </ul>
+
+        </div>
+
+        <!-- header 영역의 nav 메뉴 영역 -->
+        <div id="menu_bar">
+            <ul>
+                <li><a href="../index.php">HOME</a></li>
+                <li><a href="../message/message_form.php">쪽지</a></li>
+                <li><a href="../board/board_list.php">게시판</a></li>
+                <li><a href="../index.php">사이트완성</a></li>
+            </ul>
+        </div>
