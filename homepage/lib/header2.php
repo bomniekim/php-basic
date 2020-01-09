@@ -10,10 +10,9 @@
     $userpoint="";
 
     if( isset($_SESSION['userid']) ) $userid= $_SESSION['userid'];
-    if( isset($_SESSION['username']) ) $userid= $_SESSION['username'];
-    if( isset($_SESSION['userlevel']) ) $userid= $_SESSION['userlevel'];
-    if( isset($_SESSION['userpoint']) ) $userid= $_SESSION['userpoint'];
-
+    if( isset($_SESSION['username']) ) $username= $_SESSION['username'];
+    if( isset($_SESSION['userlevel']) ) $userlevel= $_SESSION['userlevel'];
+    if( isset($_SESSION['userpoint']) ) $userpoint= $_SESSION['userpoint'];
 
 ?> 
 
