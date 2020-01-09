@@ -4,7 +4,7 @@
     // 로그인 여부에 따라 화면 구성이 다르기 때문에 session에 저장되어 있는 회원정보 중 id, name, level 값 읽어오기
     session_start(); // 세션을 저장하든 읽어오든 사용하고자 하면 반드시 이 메소드로 시작
 
-    $userid="aa";
+    $userid="";
     $username="";
     $userlevel=""; // 회원등급: 1~9등급 [1등급:관리자, 9등급:신규회원]
     $userpoint="";
