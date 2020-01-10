@@ -1,0 +1,20 @@
+/* 쪽지 보기 전체 가로사이즈 및 가운데 정렬 */
+#message_box {width: 800px; margin: 0 auto;}
+
+/* 제목 */
+#message_box h3 {margin-top: 30px; padding: 10px; font-size: 20px; border-bottom: solid 2px #516e7f;}
+
+/* 쪽지 내용 영역의 제목/상대방id/등록일 */
+#view_content li:nth-child(1) {padding: 15px; border-bottom: solid 1px #aaaaaa;}
+
+/* 상대방id/등록일을 오른쪽 끝으로 */
+#view_content .col2 {float: right;}
+
+/* $content 영역 */
+#view_content li:nth-child(2) {padding: 15px 15px 80px 15px; border-bottom: solid 1px #aaaaaa;}
+
+/* 버튼들 오른쪽 정렬 및 옆으로 배치 */
+#message_box .buttons {text-align: right; margin: 20px 0 40px 0;}
+#message_box .buttons li {display: inline;}
+#message_box .buttons button {padding: 5px 10px; cursor: pointer;}
+
