@@ -39,13 +39,18 @@
     mysqli_close($conn);
 
     // 우선 뒤로 돌아가기 (즉, 메세지 작성 페이지로 이동)
-    echo "
-        <script>
-            history.back();
-        </script>
-    ";
+    // echo "
+    //     <script>
+    //         history.back();
+    //     </script>
+    // ";
 
 
     // 원래는 보낸 쪽지함 페이지로 이동
+    echo "
+        <script>
+            location.href='./message_box.php?mode=send';
+        </script>
+    ";
 
 ?>
