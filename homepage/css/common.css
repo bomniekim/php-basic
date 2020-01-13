@@ -6,16 +6,15 @@
 
 @font-face {
     font-family: "NanumGothic";
-    src: url('homepage/fonts/NanumGothic.ttf')format('truetype'),
-    url('homepage/fonts/NanumGothic.woff' ) format('woff');
-    src:local(※), url('homepage/fonts/NanumGothic.woff') format('woff')}
+    src: url("../fonts/NanumGothic.ttf")format('truetype'),
+    url('../fonts/NanumGothic.woff' ) format('woff');}
         
 @font-face {
     font-family: "NanumGothicBold";
-    src: url('homepage/fonts/NanumGothicBold.ttf') format('truetype'),
-    url('homepage/fonts/NanumGothicBold.woff') format('woff');}
+    src: url("../fonts/NanumGothicBold.ttf") format('truetype'),
+    url('../fonts/NanumGothicBold.woff') format('woff');}
 
-body{ font-family: "NanumGothic"; font-size: 14px;}
+* { font-family: NanumGothic; }
 
 /* 모든 리스트의 bullet 기호 제거 */
 ul {list-style: none;}
