@@ -2,7 +2,7 @@
 /* *{border: hotpink 1px solid;} */
 
 /* 게시판 목록보기(board_list.php) 영역의 가로 사이즈 및 가운데 정렬 */
-#board_box {width: 1000px; margin: 0 auto;}
+#board_box {width: 900px; margin: 0 auto;}
 
 /* 제목 */
 #board_box h3 { margin-top: 30px; padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px;}
@@ -15,11 +15,11 @@
 #board_list span {display: inline-block; text-align: center;}
 
 /* 각 col의 사이즈 */
-#board_list .col1 {width: 80px;}
-#board_list .col2 {width: 420px; text-align: left;}
+#board_list .col1 {width: 70px;}
+#board_list .col2 {width: 380px; text-align: left;}
 #board_list .col3 {width: 100px;}
 #board_list .col4 {width: 70px;}
-#board_list .col5 {width: 210px;}
+#board_list .col5 {width: 180px;}
 #board_list .col6 {width: 70px;}
 
 /* pagination */
@@ -43,8 +43,8 @@
 #board_form li {padding: 12px; border-bottom: solid 1px #dddddd;}
 
 /* input요소들과 textarea의 가로/세로사이즈 */
-#board_form input { width: 500px; height: 25px;}
-#board_form textarea { width: 500px; height: 150px;}
+#board_form input { width: 600px; height: 25px;}
+#board_form textarea { width: 600px; height: 150px;}
 
 /* textarea의 label이 아래쪽에 배치되므로 이를 수정하기 위해 */
 #board_form #t_a {position: relative; height: 158px;}
