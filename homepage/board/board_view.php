@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- 게시판 게시글 클릭 시 게시물 내용 보기 페이지 -->
+
+<html>
 <head>
     <meta charset="UTF-8">
     <title>게시판</title>
@@ -38,7 +40,7 @@
                 $file_type= $row['file_type'];   // 파일타입
                 $copy_name= $row['file_copied']; // 경로를 제외한 저장된 파일명
 
-                $content= nl2br($content);
+                $content= str_replace("\n","<br>",$content);
 
                 // 조회수 증가
                 $hit++;
@@ -62,10 +64,8 @@
                             $file_size= filesize($file_path);
 
                             echo "☞ 첨부파일 : $src_name ($file_size Byte)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href='./download.php?num=$num'>[저장]</a>
+                            <a href='./download.php?src_name=$src_name&file_path=$file_path&file_size=$file_size'>[저장]</a>
                             <a href='$file_path' target='_blank'>[미리보기]</a><br><br>";
-
-                           
                         }
                     ?>
                         
