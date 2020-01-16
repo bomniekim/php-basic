@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <?php include "../lib/header2.php"?>
+            <?php include "../lib/header2.php"; ?>
         </header>
         <section>
             <div id="main_content">
@@ -50,7 +50,7 @@
             </div>
         </section>
         <footer>
-            <?php include "../lib/footer.php"?>
+            <?php include "../lib/footer.php"; ?>
         </footer>
     
     </body>
