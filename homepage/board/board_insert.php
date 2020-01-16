@@ -22,7 +22,7 @@
         $new_file_name= date('YmdHis')."_".$src_name;
         
         // 최종저장될 경로를 포함한 파일위치
-        $dst_name="./upload/".$new_file_name;
+        $dst_name="./uploads/".$new_file_name;
 
         // 임시저장소($tmp_name)의 파일을 $dst_name으로 이동
         move_uploaded_file($tmp_name, $dst_name);
