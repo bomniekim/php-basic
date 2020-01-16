@@ -28,7 +28,7 @@
     // 삭제완료 되었으니 목록페이지로 이동
     echo "
         <script>
-            location.href='./board_list';
+            location.href='./board_list.php';
         </script>
     ";
 
