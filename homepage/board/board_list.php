@@ -75,7 +75,7 @@
                                 
                         ?>
                             <!-- html 문법으로 화면에 필드값들 출력 -->
-                            <li>
+                            <li class="title">
                                 <span class="col1"><?=$num?></span>
                                 <span class="col2"><a href="./board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
                                 <!-- 게시글의 제목을 누르면 상세보기(board_view) 페이지로 이동-->
